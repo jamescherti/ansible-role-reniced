@@ -39,7 +39,7 @@
   notify: Restart reniced
   ansible.builtin.copy:
     dest: /etc/reniced.conf
-    src: "{{ role_path }}/templates/reniced.conf.j2"
+    content: "{{ reniced_conf }}"
     owner: root
     group: root
     mode: "0644"
