@@ -24,6 +24,12 @@
 # SOFTWARE.
 #
 
+- name: Update Apt cache
+  ansible.builtin.apt:
+    update_cache: true
+    cache_valid_time: 3600
+  changed_when: false
+
 - name: Install reniced
   ansible.builtin.apt:
     name:
@@ -33,10 +39,10 @@
   notify: Restart reniced
   ansible.builtin.copy:
     dest: /etc/reniced.conf
+    src: "{{ role_path }}/templates/reniced.conf.j2"
     owner: root
     group: root
-    mode: '0644'
-    content: "{{ reniced_conf }}"
+    mode: "0644"
 
 - name: Enable and start the reniced service
   ansible.builtin.service:
