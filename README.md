@@ -51,4 +51,4 @@ reniced_conf: |
 
 ## Links
 
-- https://github.com/jamescherti/ansible-reniced
+- [ansible-reniced @GitHub](https://github.com/jamescherti/ansible-reniced)
