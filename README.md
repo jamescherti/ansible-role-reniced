@@ -49,6 +49,12 @@ reniced_conf: |
   o1 bash
 ```
 
+## Author and license
+
+Copyright (C) 2024 [James Cherti](https://www.jamescherti.com).
+
+Distributed under terms of the MIT license.
+
 ## Links
 
 - [ansible-reniced @GitHub](https://github.com/jamescherti/ansible-reniced)
