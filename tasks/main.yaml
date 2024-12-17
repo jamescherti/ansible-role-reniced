@@ -30,6 +30,7 @@
       - reniced
 
 - name: File /etc/reniced.conf
+  notify: Restart reniced
   ansible.builtin.copy:
     dest: /etc/reniced.conf
     owner: root

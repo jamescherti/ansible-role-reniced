@@ -1,0 +1,6 @@
+---
+
+- name: Restart reniced
+  ansible.builtin.service:
+    name: reniced
+    state: restarted
