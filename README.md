@@ -1,4 +1,4 @@
-# ansible-reniced
+# ansible-role-reniced
 
 This Ansible role configures `reniced` on Debian and Ubuntu based operating systems.
 
@@ -57,4 +57,4 @@ Distributed under terms of the MIT license.
 
 ## Links
 
-- [ansible-reniced @GitHub](https://github.com/jamescherti/ansible-reniced)
+- [ansible-role-reniced @GitHub](https://github.com/jamescherti/ansible-role-reniced)
