@@ -1,6 +1,6 @@
 # ansible-role-reniced
 
-This Ansible role configures `reniced` on Debian and Ubuntu based operating systems.
+The [ansible-role-reniced](https://github.com/jamescherti/ansible-role-reniced) Ansible role configures `reniced` on Debian and Ubuntu based operating systems.
 
 ## Customizations
 
