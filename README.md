@@ -9,7 +9,7 @@ When `reniced_conf` is defined, it is used as the configuration content.
 Include the role using:
 ```yaml
 - name: Import role reniced
-  when: ansible_os_family == "Debian"
+  when: ansible_facts.os_family == "Debian"
   ansible.builtin.import_role:
     name: reniced
 ```
