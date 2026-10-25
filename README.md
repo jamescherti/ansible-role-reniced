@@ -1,5 +1,8 @@
 # ansible-role-reniced - An Ansible role that configures reniced
 
+- Author: James Cherti <[https://www.jamescherti.com/](https://www.jamescherti.com/)>
+- License: MIT
+
 The [ansible-role-reniced](https://github.com/jamescherti/ansible-role-reniced) Ansible role configures `reniced` on Debian and Ubuntu based operating systems.
 
 ## Customizations
@@ -7,6 +10,7 @@ The [ansible-role-reniced](https://github.com/jamescherti/ansible-role-reniced) 
 When `reniced_conf` is defined, it is used as the configuration content.
 
 Include the role using:
+
 ```yaml
 - name: Import role reniced
   when: ansible_facts.os_family == "Debian"
@@ -15,6 +19,7 @@ Include the role using:
 ```
 
 Variables:
+
 ```yaml
 reniced_conf: |
   # high prio network services
